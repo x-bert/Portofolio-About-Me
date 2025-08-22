@@ -1,0 +1,132 @@
+/* override bootstrap */
+
+body {
+  font-family: "Source Code Pro", monospace!important;
+}
+
+.bg-primary{
+    background-color: #A599B5!important;
+}
+.text-primary{
+    color: #A599B5!important;
+}
+.border-primary{
+    border-color: #A599B5!important;
+}
+.bg-secondary{
+    background-color: #2e2f2f!important;
+}
+.text-secondary{
+    color: #2e2f2f!important;
+}
+.border-secondary{
+    border-color: #2e2f2f!important;
+}
+.bg-dark{
+    background-color: #051014!important;
+}
+.text-dark{
+    color: #051014!important;
+}
+.border-dark{
+    border-color: #051014!important;
+}
+.bg-light{
+    background-color: #ACBDBA!important;
+}
+.text-light{
+    color: #ACBDBA!important;
+}
+.border-light{
+    border-color: #ACBDBA!important;
+}
+
+.navbar-dark .navbar-brand,
+.navbar-dark .navbar-nav .nav-link {
+    color: #CDDDDD !important; /* lighter */
+}
+
+.navbar-dark .navbar-brand:hover,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color:  #ffffff!important; /* white */
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23ACBDBA' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+/* new */
+.bg-lighter{
+    background-color: #CDDDDD!important;
+}
+.text-lighter{
+    color: #CDDDDD!important;
+}
+.border-lighter{
+    border-color: #CDDDDD!important;
+}
+
+/* nav */
+.scrolled-down{
+    transform:translateY(-100%); transition: all 0.3s ease-in-out;
+}
+.scrolled-up{
+    transform:translateY(0); transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    /* background-color: rgba(255, 255, 255, 0.5)!important;  */
+    background-color: transparent!important;
+    backdrop-filter: blur(5px); 
+}
+
+.near-top {
+    box-shadow: none;
+}
+
+@media (max-width: 768px) {
+    .custom-center-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* introduction */
+#introduction {
+    min-height: calc(100vh - 100px); 
+}
+@media (max-width: 576px) {
+    #introduction {
+        min-height: calc(100vh - 56px); 
+    }
+}
+
+/* about */
+.tech-logo {
+    height: 63px!important;
+}
+.tech-bootstrap {
+    height: 55px!important;
+}
+
+/* phone */
+@media (max-width: 460px) {
+    .tech-logo, .tech-bootstrap {
+        margin-left: 0.50rem!important;
+        margin-right: 0.50rem!important;
+    }
+}
+@media (max-width: 360px) {
+    .tech-logo {
+        height: 45px!important;
+    }
+    .tech-bootstrap {
+        height: 40px!important;
+    }
+}
+
+/* SMALLEST phone */
+@media (max-width: 320px) {
+    .flex-wrap-mobile {
+        flex-wrap: wrap;
+    }
+}
